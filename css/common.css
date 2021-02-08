@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Nike TG";
+    src: url(../font/257c802f-349c-4b4d-aefa-546d5de15ec6.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Nike Futura";
+    src: url(../font/nike-futura.woff2) format("woff2");
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: rgb(17, 17, 17);
+}
+
+div,
+ul,
+li {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input,
+button {
+    border: none;
+}

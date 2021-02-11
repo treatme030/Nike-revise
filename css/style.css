@@ -1,0 +1,512 @@
+/* Header */
+
+.gnb-wrap {
+    width: 100%;
+}
+/* Gnb-up */
+
+.gnb-up {
+    max-width: 1920px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 38px 0 36px;
+    background-color: rgb(245, 245, 245);
+}
+
+.brand,
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.brand-item a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    color: rgb(17, 17, 17);
+}
+
+.user-menu li {
+    height: 100%;
+    position: relative;
+}
+
+.user-menu li ~ li:before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    background-color: rgb(17, 17, 17);
+}
+
+.user-menu li a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 12px;
+    margin: 0 12px;
+    color: rgb(17, 17, 17);
+}
+
+.user-menu li:last-child a {
+    margin-right: 8px;
+}
+
+/*Gnb-down */
+
+.gnb-down {
+    position: relative;
+    max-width: 1920px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 38px 0 36px;
+}
+
+.nav-box,
+.acct-btn {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 0 12px;
+}
+
+.nav-box li {
+    height: 100%;
+}
+.nav-box a {
+    display: block;
+    padding: 16px 12px 18px 12px;
+    color: rgb(17, 17, 17);
+}
+
+.nav-box a:hover {
+    border-bottom: 2px solid rgb(17, 17, 17);
+}
+
+.acct-btn a {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.acct-btn li:first-child a {
+    margin-right: 12px;
+}
+
+.search {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    right: 142px;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* input 안에 글씨 디자인 */
+::placeholder {
+    padding: 8px 48px;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.search button {
+    position: absolute;
+    top: 11px;
+    left: 1px;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+}
+
+/* Main-layout */
+
+.main-wrap {
+    width: 100%;
+}
+/* Banner */
+
+.banner {
+    width: 100%;
+    padding-top: 10px;
+    min-height: 58px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.banner p {
+    font-size: 14px;
+    line-height: 1;
+}
+
+.banner a {
+    font-size: 12px;
+    line-height: 2;
+    text-decoration: underline;
+    color: rgb(17, 17, 17);
+}
+
+/* Visual-layout */
+
+.visual-wrap {
+    width: 100%;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+/* Visual-1 */
+
+.visual-1 {
+    width: 100%;
+    position: relative;
+    padding: 0 8px;
+    display: flex;
+}
+
+.visual-1 img {
+    width: 100%;
+    /*img로 이미지 넣을 때 브라우저 크기변화에 따라 이미지 가로, 세로 비율에 맞게 변화하려면
+    이미지에 직접 %값 넣어준다.*/
+}
+
+/* visual-2 */
+
+.visual-2-wrap {
+    position: relative;
+    padding: 0 8px;
+    margin-top: 84px;
+    display: flex;
+}
+
+.visual-2-wrap img {
+    width: 100%;
+}
+
+.visual-2-wrap .visual-2 .text-box-up p {
+    font-size: initial;
+    line-height: initial;
+}
+
+.visual-2-wrap .visual-2 .img-text p {
+    font-size: 14px;
+    line-height: 1.4285;
+    font-weight: 400;
+    padding-top: 22px;
+}
+
+/*visual-3*/
+
+.visual-3-wrap {
+    margin-top: 84px;
+}
+
+.visual-3-box {
+    display: flex;
+}
+
+.visual-3 {
+    position: relative;
+    padding: 0 8px;
+}
+
+.visual-3 img {
+    width: 100%;
+    vertical-align: top; /*img는 인라인요소이기때문에 기본적으로 베이스라인에
+    위치해 있음, 아랫부분에 있는 공간 제거 */
+}
+
+/* Visual-4 */
+
+.visual-4-wrap {
+    margin-top: 84px;
+}
+
+.visual-4 {
+    padding: 0 8px;
+}
+
+.carousel-box {
+    white-space: nowrap;
+    overflow: auto;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+/* 스크롤바 디자인 */
+.carousel-box::-webkit-scrollbar {
+    height: 4px;
+}
+
+.carousel-box::-webkit-scrollbar-thumb {
+    background-color: rgb(117, 117, 117);
+}
+
+.carousel-box::-webkit-scrollbar-track {
+    background-color: rgb(245, 245, 245);
+}
+
+.carousel-box .swiper-slide {
+    width: 33%;
+    flex-shrink: 0;
+    margin-right: 16px;
+}
+
+.carousel-box .swiper-slide img {
+    width: 100%;
+}
+
+.visual-4 .item-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 16px 0 0;
+}
+
+.visual-4 .item-info .price p:nth-child(2) {
+    color: rgb(117, 117, 117);
+}
+
+/*Visual-5*/
+
+.visual-5-wrap {
+    margin-top: 84px;
+}
+
+.visual-5-box {
+    display: flex;
+}
+
+.visual-5 {
+    position: relative;
+    padding: 0 8px;
+}
+
+.visual-5 img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* Visual-6 */
+
+.visual-6-wrap {
+    margin-top: 84px;
+}
+
+.visual-6 {
+    display: flex;
+}
+
+.visual-6 li {
+    width: 33%;
+    margin: 0 8px;
+}
+
+.visual-6 li img {
+    width: 100%;
+}
+
+.visual-6 li p {
+    padding-top: 16px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+/* Membership */
+
+.membership-wrap {
+    padding: 0 8px;
+    margin-top: 84px;
+}
+
+.membership {
+    position: relative;
+    padding-top: 39%;
+    background-image: url("../img/nike-just-do-it\ \(10\).jpg");
+}
+
+.membership .membership-btn {
+    position: absolute;
+    left: 0;
+    right: 0; /*중앙 정렬 하기위해서 부모 전체 넓이로 만듦*/
+    bottom: 40px;
+    text-align: center;
+}
+
+.membership .membership-btn a {
+    margin-top: 6px;
+}
+
+/* Item-list */
+
+.item-list-wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 84px;
+    padding: 0 20px;
+}
+
+.item-list-box {
+    display: flex;
+    justify-content: center;
+    height: 192px;
+    overflow: hidden;
+}
+
+.item-list-box .item-list {
+    width: 25%;
+    flex-shrink: 0;
+    padding-right: 48px;
+    white-space: nowrap;
+}
+
+.item-list-box ul:last-child {
+    padding-right: 0;
+}
+
+.item-list-box .item-list li:first-child {
+    margin-bottom: 24px;
+}
+
+.item-list-box .item-list .change-b {
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* hover 되었을 때 숨겨두었던 목록 보이게 하기 */
+.item-list-box:hover {
+    height: 576px;
+}
+
+/* Footer */
+
+/* Footer-layout */
+
+.footer-wrap {
+    margin-top: 56px;
+    background-color: rgb(17, 17, 17);
+}
+
+.footer-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 40px 0 40px;
+}
+
+/* Footer-up */
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.footer-up .footer-up-l {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-up .footer-up-l ul {
+    width: 25%;
+}
+
+.footer-up .footer-up-l ul li {
+    margin-bottom: 3px;
+}
+
+.footer-up .footer-up-l ul a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.footer-up .footer-up-l ul:first-child a,
+.footer-up .footer-up-l ul span {
+    font-family: "Nike TG";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+    color: rgb(255, 255, 255);
+}
+
+.footer-up .footer-up-r {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+.footer-up .footer-up-r li {
+    margin-left: 16px;
+}
+
+.footer-up-r li svg {
+    fill: rgb(126, 126, 126);
+}
+
+/* Footer-down */
+
+.footer-down-wrap {
+    height: 60px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(34, 34, 34);
+}
+
+.footer-down-wrap a,
+.copy {
+    font-size: 10px;
+}
+
+.footer-down-l {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-down-l .map {
+    display: flex;
+}
+
+.footer-down-l span {
+    margin: 0 8px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-down-l div {
+    margin-left: 16px;
+    color: rgb(126, 126, 126);
+}
+
+.footer-down-r {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.footer-down-r li {
+    margin-left: 12px;
+}
+
+.footer-down-r a {
+    display: inline-block;
+    padding: 8px;
+    line-height: 2.4;
+}

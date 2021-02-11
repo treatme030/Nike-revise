@@ -29,3 +29,98 @@ input,
 button {
     border: none;
 }
+
+/* font-style */
+
+.title {
+    font-family: "Nike Futura";
+    font-size: 72px;
+    line-height: 0.83;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1666;
+    margin-bottom: 24px;
+    padding-left: 8px;
+}
+
+/* contents-style */
+
+.text-box-up {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.text-box-down {
+    position: absolute;
+    bottom: 36px;
+    left: 36px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.white-btn {
+    display: inline-block;
+    padding: 8px 28px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 24px 6px 0 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    border-radius: 20px;
+}
+
+.black-btn {
+    display: inline-block;
+    padding: 8px 28px;
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 24px 6px 0 0;
+    background-color: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.cursor-p {
+    cursor: pointer;
+}
+
+/* Change-color */
+
+.change-o:hover {
+    opacity: 0.7;
+    fill-opacity: 0.7;
+}
+
+.change-w:hover {
+    color: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+}
+
+.change-b:hover {
+    color: rgb(17, 17, 17);
+}
+
+.change-g:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* color style */
+
+.c-white {
+    color: rgb(255, 255, 255);
+}
+
+.c-black {
+    color: rgb(17, 17, 17);
+}
+
+.c-list {
+    color: rgb(117, 117, 117);
+}

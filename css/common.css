@@ -87,6 +87,12 @@ h3 {
     border-radius: 20px;
 }
 
+.white-btn:hover,
+.black-btn:hover {
+    opacity: 0.7;
+    fill-opacity: 0.7;
+}
+
 .cursor-p {
     cursor: pointer;
 }
@@ -96,11 +102,6 @@ h3 {
 .change-o:hover {
     opacity: 0.7;
     fill-opacity: 0.7;
-}
-
-.change-w:hover {
-    color: rgb(255, 255, 255);
-    fill: rgb(255, 255, 255);
 }
 
 .change-b:hover {

@@ -1,5 +1,7 @@
 /* Header */
 
+/* header-layout */
+
 .gnb-wrap {
     width: 100%;
 }
@@ -381,9 +383,14 @@
     margin-bottom: 24px;
 }
 
-.item-list-box .item-list .change-b {
+.item-list-box .item-list a {
     display: block;
     margin-bottom: 12px;
+    color: rgb(117, 117, 117);
+}
+
+.item-list-box .item-list a:hover {
+    color: rgb(17, 17, 17);
 }
 
 /* hover 되었을 때 숨겨두었던 목록 보이게 하기 */
@@ -404,6 +411,10 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 40px 40px 0 40px;
+}
+
+.footer-container a {
+    color: rgb(117, 117, 117);
 }
 
 /* Footer-up */
@@ -434,6 +445,10 @@
     line-height: 2;
 }
 
+.footer-up .footer-up-l ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
 .footer-up .footer-up-l ul:first-child a,
 .footer-up .footer-up-l ul span {
     font-family: "Nike TG";
@@ -456,6 +471,10 @@
 
 .footer-up-r li svg {
     fill: rgb(126, 126, 126);
+}
+
+.footer-up-r li svg:hover {
+    fill: rgb(255, 255, 255);
 }
 
 /* Footer-down */
@@ -509,4 +528,9 @@
     display: inline-block;
     padding: 8px;
     line-height: 2.4;
+    color: rgb(117, 117, 117);
+}
+
+.footer-down-r a:hover {
+    color: rgb(255, 255, 255);
 }

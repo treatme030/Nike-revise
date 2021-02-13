@@ -47,13 +47,16 @@ h3 {
     padding-left: 8px;
 }
 
+.fs-20 {
+    font-size: 20px;
+}
+
 /* contents-style */
 
 .text-box-up {
     position: absolute;
     top: 36px;
     left: 36px;
-    font-size: 20px;
     line-height: 1.2;
 }
 
@@ -61,7 +64,6 @@ h3 {
     position: absolute;
     bottom: 36px;
     left: 36px;
-    font-size: 20px;
     line-height: 1.2;
 }
 

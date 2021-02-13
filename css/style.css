@@ -135,10 +135,15 @@
     background-color: rgb(245, 245, 245);
 }
 
+.btn-group {
+    display: none;
+}
+
 /* Main-layout */
 
 .main-wrap {
     width: 100%;
+    margin-bottom: 56px;
 }
 /* Banner */
 
@@ -166,8 +171,8 @@
 
 .visual-wrap {
     width: 100%;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-right: 48px;
+    padding-left: 48px;
 }
 
 /* Visual-1 */
@@ -343,8 +348,8 @@
 .membership .membership-btn {
     position: absolute;
     left: 0;
-    right: 0; /*중앙 정렬 하기위해서 부모 전체 넓이로 만듦*/
-    bottom: 40px;
+    width: 100%;
+    bottom: 15px;
     text-align: center;
 }
 
@@ -403,7 +408,6 @@
 /* Footer-layout */
 
 .footer-wrap {
-    margin-top: 56px;
     background-color: rgb(17, 17, 17);
 }
 
@@ -533,4 +537,198 @@
 
 .footer-down-r a:hover {
     color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1023px) {
+    /* Header */
+    .gnb-up,
+    .gnb-down .nav-box,
+    .search,
+    .acct-btn {
+        display: none;
+    }
+
+    .gnb-down {
+        padding: 0 16px 0 12px;
+    }
+
+    .gnb-down .btn-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .gnb-down .btn-group a {
+        display: flex;
+        padding: 8px;
+        margin-left: 8px;
+        border-radius: 50%;
+    }
+
+    /* Main */
+    .main-wrap {
+        margin-bottom: 20px;
+    }
+
+    .visual-wrap {
+        padding: 0 12px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+
+    .visual-4 .item-info {
+        flex-direction: column;
+    }
+
+    .carousel-box {
+        overflow-x: hidden;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 40px 20px 0 20px;
+    }
+
+    .footer-up .footer-up-l ul {
+        width: 33.3333%;
+    }
+
+    .footer-down-r li {
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    /* Main */
+    .visual-1 {
+        flex-direction: column;
+    }
+
+    .visual-1 .text-box-down {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 24px;
+        text-align: left;
+        color: rgb(17, 17, 17);
+    }
+
+    .visual-1 .text-box-down a {
+        color: rgb(255, 255, 255);
+        background-color: rgb(17, 17, 17);
+    }
+
+    .visual-2-wrap div:first-child {
+        display: none;
+    }
+
+    .visual-2-wrap div:last-child {
+        position: relative;
+    }
+
+    .visual-2-wrap div:last-child p {
+        position: absolute;
+        top: 50%;
+        right: -155px;
+        transform: rotate(-90deg);
+    }
+
+    .visual-3-box,
+    .visual-5-box {
+        flex-direction: column;
+    }
+
+    .visual-3-wrap div:first-child,
+    .visual-5-wrap div:first-child {
+        margin-bottom: 8px;
+    }
+
+    .carousel-box .swiper-slide {
+        width: 300px;
+        flex-shrink: 0;
+        margin-right: 8px;
+    }
+
+    .visual-6 li {
+        width: 300px;
+        flex-shrink: 0;
+        margin: 0 8px 0 0;
+    }
+
+    .membership .membership-btn {
+        bottom: -10px;
+    }
+
+    .item-list-box {
+        flex-direction: column;
+    }
+
+    .item-list-box .item-list a {
+        display: none;
+    }
+
+    /* Footer */
+    .footer-container {
+        padding: 20px 8px 0 8px;
+    }
+
+    .footer-up {
+        flex-direction: column;
+    }
+    .footer-up .footer-up-l {
+        flex-direction: column; /*width:100; flex-wrap: wrap;로 적용하는 방법도 있음*/
+        width: 100%;
+    }
+
+    .footer-up .footer-up-l ul {
+        width: 100%;
+        padding: 8px 15px;
+        border-bottom: 1px solid rgb(50, 50, 50);
+    }
+
+    .footer-up .footer-up-r {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 16px;
+    }
+
+    .footer-down-wrap {
+        height: auto;
+        flex-direction: column;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .footer-down-l {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 8px 0 12px;
+    }
+
+    .footer-down-l div {
+        margin-left: 0;
+        font-size: 12px;
+        padding: 20px 0 24px 0;
+    }
+
+    .footer-down-r {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 8px 12px 12px;
+    }
+
+    .footer-down-r li {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer-down-r li a {
+        display: inline-block;
+        padding: 8px 0;
+        line-height: 2;
+        font-size: 12px;
+    }
 }

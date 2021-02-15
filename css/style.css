@@ -248,7 +248,8 @@
 
 .carousel-box {
     white-space: nowrap;
-    overflow: auto;
+    overflow: scroll;
+    overflow-y: hidden;
     display: flex;
     padding-bottom: 30px;
 }
@@ -582,7 +583,7 @@
     }
 
     .carousel-box {
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     /* Footer */
@@ -651,6 +652,7 @@
     .carousel-box {
         width: 100%;
         overflow: scroll;
+        overflow-y: hidden;
     }
 
     .carousel-box .swiper-slide {

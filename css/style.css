@@ -627,9 +627,13 @@
         position: relative;
     }
 
+    .visual-2 img {
+        height: 500px;
+    }
+
     .visual-2-wrap div:last-child p {
         position: absolute;
-        top: 50%;
+        top: 35%;
         right: -155px;
         transform: rotate(-90deg);
     }
@@ -644,10 +648,33 @@
         margin-bottom: 8px;
     }
 
+    .carousel-box {
+        width: 100%;
+        overflow: scroll;
+    }
+
     .carousel-box .swiper-slide {
         width: 300px;
         flex-shrink: 0;
         margin-right: 8px;
+    }
+
+    .visual-6 {
+        width: 100%;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+    .visual-6::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .visual-6::-webkit-scrollbar-thumb {
+        background-color: rgb(117, 117, 117);
+    }
+
+    .visual-6::-webkit-scrollbar-track {
+        background-color: rgb(245, 245, 245);
     }
 
     .visual-6 li {
